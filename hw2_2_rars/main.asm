@@ -1,12 +1,7 @@
-.section .data
-msg:
-    .asciz "Ku Ku Hello Hello!\n"
-
 .section .text
-.globl mess
+.globl _start
+_start:
+    call mess 
 
-mess:
-    la a0, msg    
-    li a7, 1        
+    li a7, 10 
     ecall
-    ret
