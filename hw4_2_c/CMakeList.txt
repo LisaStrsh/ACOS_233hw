@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.31)
+project(hw4_2_c C)
+
+set(CMAKE_C_STANDARD 11)
+
+add_executable(hw4_2_c fork.c outredir.c allredir.c argredir.c piperedir.c)
